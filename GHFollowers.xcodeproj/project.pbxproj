@@ -97,20 +97,11 @@
 		8FB373EA243F1D3800205C7A /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				8FB373EB243F1D3800205C7A /* AppDelegate.swift */,
-				8FB373ED243F1D3800205C7A /* SceneDelegate.swift */,
-				8FB373F4243F1D3A00205C7A /* Assets.xcassets */,
-				8FB373F6243F1D3A00205C7A /* LaunchScreen.storyboard */,
+				8FB374272440A00600205C7A /* Support */,
+				8FB3742624409FA600205C7A /* Extension */,
+				8FB3742524409F7400205C7A /* Custom Views */,
+				8FB3742424409F3D00205C7A /* Screens */,
 				8FB373F9243F1D3A00205C7A /* Info.plist */,
-				8FB373FF243F50AF00205C7A /* SearchViewController.swift */,
-				8FB37401243F50DD00205C7A /* FavoritesListViewController.swift */,
-				8FB37403243F64C900205C7A /* GFButton.swift */,
-				8FB37405243F6B9C00205C7A /* GFTextField.swift */,
-				8FB3740724406FCA00205C7A /* FollowerListViewController.swift */,
-				8FB3740924407B6B00205C7A /* GFTitleLabel.swift */,
-				8FB3740B24407CE000205C7A /* GFBodyLabel.swift */,
-				8FB3740D24407D9B00205C7A /* GFAlertViewController.swift */,
-				8FB3740F2440902000205C7A /* UIViewController+Ext.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -123,6 +114,47 @@
 				8FB374222440977900205C7A /* SearchViewControllerSnapshotTests.swift */,
 			);
 			path = GHFollowersTests;
+			sourceTree = "<group>";
+		};
+		8FB3742424409F3D00205C7A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8FB373FF243F50AF00205C7A /* SearchViewController.swift */,
+				8FB37401243F50DD00205C7A /* FavoritesListViewController.swift */,
+				8FB3740724406FCA00205C7A /* FollowerListViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		8FB3742524409F7400205C7A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				8FB3740B24407CE000205C7A /* GFBodyLabel.swift */,
+				8FB37403243F64C900205C7A /* GFButton.swift */,
+				8FB37405243F6B9C00205C7A /* GFTextField.swift */,
+				8FB3740924407B6B00205C7A /* GFTitleLabel.swift */,
+				8FB3740D24407D9B00205C7A /* GFAlertViewController.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		8FB3742624409FA600205C7A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8FB3740F2440902000205C7A /* UIViewController+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8FB374272440A00600205C7A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				8FB373F4243F1D3A00205C7A /* Assets.xcassets */,
+				8FB373EB243F1D3800205C7A /* AppDelegate.swift */,
+				8FB373ED243F1D3800205C7A /* SceneDelegate.swift */,
+				8FB373F6243F1D3A00205C7A /* LaunchScreen.storyboard */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
