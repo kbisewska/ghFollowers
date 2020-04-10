@@ -22,6 +22,7 @@
 		8FB374102440902000205C7A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3740F2440902000205C7A /* UIViewController+Ext.swift */; };
 		8FB374182440967200205C7A /* GHFollowersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374172440967200205C7A /* GHFollowersTests.swift */; };
 		8FB374212440971000205C7A /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB374202440971000205C7A /* SnapshotTesting */; };
+		8FB374232440977900205C7A /* SearchViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374222440977900205C7A /* SearchViewControllerSnapshotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8FB374152440967200205C7A /* GHFollowersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHFollowersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB374172440967200205C7A /* GHFollowersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHFollowersTests.swift; sourceTree = "<group>"; };
 		8FB374192440967200205C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB374222440977900205C7A /* SearchViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 			children = (
 				8FB374172440967200205C7A /* GHFollowersTests.swift */,
 				8FB374192440967200205C7A /* Info.plist */,
+				8FB374222440977900205C7A /* SearchViewControllerSnapshotTests.swift */,
 			);
 			path = GHFollowersTests;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB374232440977900205C7A /* SearchViewControllerSnapshotTests.swift in Sources */,
 				8FB374182440967200205C7A /* GHFollowersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
