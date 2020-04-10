@@ -20,7 +20,18 @@
 		8FB3740C24407CE000205C7A /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3740B24407CE000205C7A /* GFBodyLabel.swift */; };
 		8FB3740E24407D9B00205C7A /* GFAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3740D24407D9B00205C7A /* GFAlertViewController.swift */; };
 		8FB374102440902000205C7A /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3740F2440902000205C7A /* UIViewController+Ext.swift */; };
+		8FB374182440967200205C7A /* GHFollowersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374172440967200205C7A /* GHFollowersTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FB3741A2440967300205C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB373E0243F1D3800205C7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB373E7243F1D3800205C7A;
+			remoteInfo = GHFollowers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8FB373E8243F1D3800205C7A /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,10 +49,20 @@
 		8FB3740B24407CE000205C7A /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		8FB3740D24407D9B00205C7A /* GFAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertViewController.swift; sourceTree = "<group>"; };
 		8FB3740F2440902000205C7A /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		8FB374152440967200205C7A /* GHFollowersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GHFollowersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB374172440967200205C7A /* GHFollowersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHFollowersTests.swift; sourceTree = "<group>"; };
+		8FB374192440967200205C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8FB373E5243F1D3800205C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB374122440967200205C7A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -55,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB373EA243F1D3800205C7A /* GHFollowers */,
+				8FB374162440967200205C7A /* GHFollowersTests */,
 				8FB373E9243F1D3800205C7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB373E8243F1D3800205C7A /* GHFollowers.app */,
+				8FB374152440967200205C7A /* GHFollowersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,6 +111,15 @@
 			path = GHFollowers;
 			sourceTree = "<group>";
 		};
+		8FB374162440967200205C7A /* GHFollowersTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FB374172440967200205C7A /* GHFollowersTests.swift */,
+				8FB374192440967200205C7A /* Info.plist */,
+			);
+			path = GHFollowersTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -108,6 +140,24 @@
 			productReference = 8FB373E8243F1D3800205C7A /* GHFollowers.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8FB374142440967200205C7A /* GHFollowersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB3741C2440967300205C7A /* Build configuration list for PBXNativeTarget "GHFollowersTests" */;
+			buildPhases = (
+				8FB374112440967200205C7A /* Sources */,
+				8FB374122440967200205C7A /* Frameworks */,
+				8FB374132440967200205C7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB3741B2440967300205C7A /* PBXTargetDependency */,
+			);
+			name = GHFollowersTests;
+			productName = GHFollowersTests;
+			productReference = 8FB374152440967200205C7A /* GHFollowersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -120,6 +170,10 @@
 				TargetAttributes = {
 					8FB373E7243F1D3800205C7A = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					8FB374142440967200205C7A = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8FB373E7243F1D3800205C7A;
 					};
 				};
 			};
@@ -137,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				8FB373E7243F1D3800205C7A /* GHFollowers */,
+				8FB374142440967200205C7A /* GHFollowersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +203,13 @@
 			files = (
 				8FB373F8243F1D3A00205C7A /* LaunchScreen.storyboard in Resources */,
 				8FB373F5243F1D3A00205C7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB374132440967200205C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +234,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8FB374112440967200205C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB374182440967200205C7A /* GHFollowersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FB3741B2440967300205C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB373E7243F1D3800205C7A /* GHFollowers */;
+			targetProxy = 8FB3741A2440967300205C7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8FB373F6243F1D3A00205C7A /* LaunchScreen.storyboard */ = {
@@ -336,6 +414,46 @@
 			};
 			name = Release;
 		};
+		8FB3741D2440967300205C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBJ7C58BY6;
+				INFOPLIST_FILE = GHFollowersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbisewska.GHFollowersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GHFollowers.app/GHFollowers";
+			};
+			name = Debug;
+		};
+		8FB3741E2440967300205C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SBJ7C58BY6;
+				INFOPLIST_FILE = GHFollowersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kbisewska.GHFollowersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GHFollowers.app/GHFollowers";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +471,15 @@
 			buildConfigurations = (
 				8FB373FD243F1D3A00205C7A /* Debug */,
 				8FB373FE243F1D3A00205C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB3741C2440967300205C7A /* Build configuration list for PBXNativeTarget "GHFollowersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB3741D2440967300205C7A /* Debug */,
+				8FB3741E2440967300205C7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
