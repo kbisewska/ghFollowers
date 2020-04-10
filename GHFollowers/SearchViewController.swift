@@ -13,6 +13,10 @@ class SearchViewController: UIViewController {
     let logoImageView = UIImageView()
     let usernameTextField = GFTextField()
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
+    
+    var isUsernameEntered: Bool {
+        return !usernameTextField.text!.isEmpty
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +40,15 @@ class SearchViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    @objc func pushFollowerListViewController() {
+        guard isUsernameEntered else { return }
+        
+        let followerListViewController = FollowerListViewController()
+        followerListViewController.username = usernameTextField.text
+        followerListViewController.title = usernameTextField.text
+        navigationController?.pushViewController(followerListViewController, animated: true)
+    }
+    
     func configureLogoImageView() {
         logoImageView.image = UIImage(named: "gh-logo")!
         logoImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -50,6 +63,8 @@ class SearchViewController: UIViewController {
     }
     
     func configureTextField() {
+        usernameTextField.delegate = self
+        
         view.addSubview(usernameTextField)
         
         NSLayoutConstraint.activate([
@@ -61,6 +76,7 @@ class SearchViewController: UIViewController {
     }
     
     func configureCallToActionButton() {
+        callToActionButton.addTarget(self, action: #selector(pushFollowerListViewController), for: .touchUpInside)
         view.addSubview(callToActionButton)
         
         NSLayoutConstraint.activate([
@@ -69,5 +85,12 @@ class SearchViewController: UIViewController {
             callToActionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
             callToActionButton.heightAnchor.constraint(equalToConstant: 50)
         ])
+    }
+}
+
+extension SearchViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        pushFollowerListViewController()
+        return true
     }
 }
