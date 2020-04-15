@@ -35,6 +35,7 @@
 		8FB374452447086C00205C7A /* GFUserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374442447086C00205C7A /* GFUserInfoHeaderViewController.swift */; };
 		8FB37447244708E200205C7A /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB37446244708E200205C7A /* GFSecondaryTitleLabel.swift */; };
 		8FB3744924470EF300205C7A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3744824470EF300205C7A /* Constants.swift */; };
+		8FB3744B2447256000205C7A /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3744A2447256000205C7A /* GFItemInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		8FB374442447086C00205C7A /* GFUserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderViewController.swift; sourceTree = "<group>"; };
 		8FB37446244708E200205C7A /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		8FB3744824470EF300205C7A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8FB3744A2447256000205C7A /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB374402445F7CA00205C7A /* GFEmptyStateView.swift */,
+				8FB3744A2447256000205C7A /* GFItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				8FB374372445A98F00205C7A /* GFAvatarImageView.swift in Sources */,
 				8FB37404243F64C900205C7A /* GFButton.swift in Sources */,
 				8FB374452447086C00205C7A /* GFUserInfoHeaderViewController.swift in Sources */,
+				8FB3744B2447256000205C7A /* GFItemInfoView.swift in Sources */,
 				8FB3740824406FCA00205C7A /* FollowerListViewController.swift in Sources */,
 				8FB374352445A91200205C7A /* FollowerCell.swift in Sources */,
 				8FB374322440BC7700205C7A /* ErrorMessage.swift in Sources */,
