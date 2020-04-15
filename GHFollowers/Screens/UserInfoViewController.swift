@@ -11,6 +11,8 @@ import UIKit
 class UserInfoViewController: UIViewController {
     
     let headerView = UIView()
+    let itemViewOne = UIView()
+    let itemViewTwo = UIView()
     
     var username: String!
 
@@ -42,11 +44,30 @@ class UserInfoViewController: UIViewController {
         headerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(headerView)
         
+        itemViewOne.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(itemViewOne)
+        
+        itemViewTwo.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(itemViewTwo)
+        
+        let padding: CGFloat = 20
+        let itemHeight: CGFloat = 140
+        
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 180)
+            headerView.heightAnchor.constraint(equalToConstant: 180),
+            
+            itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
+            itemViewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemViewOne.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
+            
+            itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
+            itemViewTwo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemViewTwo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
         ])
     }
     
