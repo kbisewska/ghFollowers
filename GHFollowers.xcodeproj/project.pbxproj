@@ -41,6 +41,7 @@
 		8FB37451244732D300205C7A /* GFFollowerItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB37450244732D300205C7A /* GFFollowerItemViewController.swift */; };
 		8FB374542447363200205C7A /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374532447363200205C7A /* Date+Ext.swift */; };
 		8FB374562447372900205C7A /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374552447372900205C7A /* String+Ext.swift */; };
+		8FB374582448401400205C7A /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374572448401400205C7A /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		8FB37450244732D300205C7A /* GFFollowerItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemViewController.swift; sourceTree = "<group>"; };
 		8FB374532447363200205C7A /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		8FB374552447372900205C7A /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		8FB374572448401400205C7A /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB3742E2440AF0500205C7A /* NetworkManager.swift */,
+				8FB374572448401400205C7A /* PersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				8FB3742A2440A54700205C7A /* Follower.swift in Sources */,
 				8FB3740A24407B6B00205C7A /* GFTitleLabel.swift in Sources */,
 				8FB374542447363200205C7A /* Date+Ext.swift in Sources */,
+				8FB374582448401400205C7A /* PersistenceManager.swift in Sources */,
 				8FB37447244708E200205C7A /* GFSecondaryTitleLabel.swift in Sources */,
 				8FB374412445F7CA00205C7A /* GFEmptyStateView.swift in Sources */,
 				8FB3742F2440AF0500205C7A /* NetworkManager.swift in Sources */,
