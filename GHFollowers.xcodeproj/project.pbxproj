@@ -44,6 +44,7 @@
 		8FB3745A2448594A00205C7A /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374592448594A00205C7A /* FavoriteCell.swift */; };
 		8FB3745D2448797900205C7A /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3745C2448797900205C7A /* GFTabBarController.swift */; };
 		8FB3745F244899E700205C7A /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB3745E244899E700205C7A /* GFAlertContainerView.swift */; };
+		8FB374612448A75A00205C7A /* GFDataLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374602448A75A00205C7A /* GFDataLoadingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		8FB374592448594A00205C7A /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		8FB3745C2448797900205C7A /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		8FB3745E244899E700205C7A /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
+		8FB374602448A75A00205C7A /* GFDataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,9 +166,9 @@
 		8FB3742424409F3D00205C7A /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				8FB373FF243F50AF00205C7A /* SearchViewController.swift */,
 				8FB37401243F50DD00205C7A /* FavoritesListViewController.swift */,
 				8FB3740724406FCA00205C7A /* FollowerListViewController.swift */,
+				8FB373FF243F50AF00205C7A /* SearchViewController.swift */,
 				8FB374422446F8B800205C7A /* UserInfoViewController.swift */,
 			);
 			path = Screens;
@@ -283,7 +285,7 @@
 			children = (
 				8FB374522447332200205C7A /* ItemInfoViewControllers */,
 				8FB3740D24407D9B00205C7A /* GFAlertViewController.swift */,
-				8FB374442447086C00205C7A /* GFUserInfoHeaderViewController.swift */,
+				8FB374602448A75A00205C7A /* GFDataLoadingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -301,6 +303,7 @@
 		8FB374522447332200205C7A /* ItemInfoViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8FB374442447086C00205C7A /* GFUserInfoHeaderViewController.swift */,
 				8FB3744C24472AC600205C7A /* GFItemInfoViewController.swift */,
 				8FB3744E244730D900205C7A /* GFRepoItemViewController.swift */,
 				8FB37450244732D300205C7A /* GFFollowerItemViewController.swift */,
@@ -445,6 +448,7 @@
 				8FB3745F244899E700205C7A /* GFAlertContainerView.swift in Sources */,
 				8FB3740A24407B6B00205C7A /* GFTitleLabel.swift in Sources */,
 				8FB374542447363200205C7A /* Date+Ext.swift in Sources */,
+				8FB374612448A75A00205C7A /* GFDataLoadingViewController.swift in Sources */,
 				8FB374582448401400205C7A /* PersistenceManager.swift in Sources */,
 				8FB37447244708E200205C7A /* GFSecondaryTitleLabel.swift in Sources */,
 				8FB374412445F7CA00205C7A /* GFEmptyStateView.swift in Sources */,
