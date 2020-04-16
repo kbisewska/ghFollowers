@@ -33,6 +33,7 @@ class SearchViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        usernameTextField.text = ""
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
@@ -47,9 +48,9 @@ class SearchViewController: UIViewController {
             return
         }
         
-        let followerListViewController = FollowerListViewController()
-        followerListViewController.username = usernameTextField.text
-        followerListViewController.title = usernameTextField.text
+        usernameTextField.resignFirstResponder()
+        
+        let followerListViewController = FollowerListViewController(username: usernameTextField.text!)
         navigationController?.pushViewController(followerListViewController, animated: true)
     }
     
