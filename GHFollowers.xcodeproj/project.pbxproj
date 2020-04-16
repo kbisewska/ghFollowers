@@ -294,9 +294,9 @@
 		8FB3743F2445F79F00205C7A /* Labels */ = {
 			isa = PBXGroup;
 			children = (
-				8FB3740B24407CE000205C7A /* GFBodyLabel.swift */,
 				8FB3740924407B6B00205C7A /* GFTitleLabel.swift */,
 				8FB37446244708E200205C7A /* GFSecondaryTitleLabel.swift */,
+				8FB3740B24407CE000205C7A /* GFBodyLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
