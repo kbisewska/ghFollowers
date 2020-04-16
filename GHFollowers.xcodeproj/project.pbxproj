@@ -42,6 +42,7 @@
 		8FB374542447363200205C7A /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374532447363200205C7A /* Date+Ext.swift */; };
 		8FB374562447372900205C7A /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374552447372900205C7A /* String+Ext.swift */; };
 		8FB374582448401400205C7A /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374572448401400205C7A /* PersistenceManager.swift */; };
+		8FB3745A2448594A00205C7A /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB374592448594A00205C7A /* FavoriteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		8FB374532447363200205C7A /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		8FB374552447372900205C7A /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		8FB374572448401400205C7A /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		8FB374592448594A00205C7A /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB374342445A91200205C7A /* FollowerCell.swift */,
+				8FB374592448594A00205C7A /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				8FB37404243F64C900205C7A /* GFButton.swift in Sources */,
 				8FB374452447086C00205C7A /* GFUserInfoHeaderViewController.swift in Sources */,
 				8FB3744B2447256000205C7A /* GFItemInfoView.swift in Sources */,
+				8FB3745A2448594A00205C7A /* FavoriteCell.swift in Sources */,
 				8FB3740824406FCA00205C7A /* FollowerListViewController.swift in Sources */,
 				8FB374352445A91200205C7A /* FollowerCell.swift in Sources */,
 				8FB374322440BC7700205C7A /* ErrorMessage.swift in Sources */,
