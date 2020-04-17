@@ -12,6 +12,7 @@ class FavoritesListViewController: GFDataLoadingViewController {
     
     let tableView = UITableView()
     var favorites: [Follower] = []
+    let noFavoritesMessage = "No Favorites?\nAdd one on the follower screen."
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,7 @@ class FavoritesListViewController: GFDataLoadingViewController {
         tableView.register(FavoriteCell.self, forCellReuseIdentifier: FavoriteCell.reuseID)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.removeExcessCells()
         view.addSubview(tableView)
     }
     
@@ -48,7 +50,7 @@ class FavoritesListViewController: GFDataLoadingViewController {
             switch result {
             case .success(let favorites):
                 if favorites.isEmpty {
-                    self.showEmptyStateView(with: "No Favorites?\nAdd one on the follower screen.", in: self.view)
+                    self.showEmptyStateView(with: self.noFavoritesMessage, in: self.view)
                 } else {
                     self.favorites = favorites
                     
@@ -90,12 +92,19 @@ extension FavoritesListViewController: UITableViewDataSource, UITableViewDelegat
         guard editingStyle == .delete else { return }
         
         let favorite = favorites[indexPath.row]
-        favorites.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .left)
         
         PersistenceManager.updateWith(favorite: favorite, actionType: .remove) { [weak self] error in
             guard let self = self else { return }
-            guard let error = error else { return }
+            guard let error = error else {
+                self.favorites.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .left)
+                
+                if self.favorites.isEmpty {
+                    self.showEmptyStateView(with: self.noFavoritesMessage, in: self.view)
+                }
+                
+                return
+            }
             
             self.presentGFAlertOnMainThread(title: "Unable to remove", message: error.rawValue, buttonTitle: "OK")
         }
