@@ -9,6 +9,7 @@
 import Foundation
 
 struct User: Codable {
+    
     let login: String
     let avatarUrl: String
     var name: String?

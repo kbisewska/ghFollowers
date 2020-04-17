@@ -128,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				8FB373EA243F1D3800205C7A /* GHFollowers */,
-				8FB374272440A00600205C7A /* Support */,
 				8FB374162440967200205C7A /* GHFollowersTests */,
 				8FB373E9243F1D3800205C7A /* Products */,
 			);
@@ -146,13 +145,14 @@
 		8FB373EA243F1D3800205C7A /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				8FB373F9243F1D3A00205C7A /* Info.plist */,
+				8FB3742524409F7400205C7A /* Custom Views */,
 				8FB3742624409FA600205C7A /* Extensions */,
-				8FB374302440BC6100205C7A /* Utilities */,
 				8FB3742D2440AEED00205C7A /* Managers */,
 				8FB374282440A53600205C7A /* Model */,
-				8FB3742524409F7400205C7A /* Custom Views */,
 				8FB3742424409F3D00205C7A /* Screens */,
-				8FB373F9243F1D3A00205C7A /* Info.plist */,
+				8FB374272440A00600205C7A /* Support */,
+				8FB374302440BC6100205C7A /* Utilities */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
