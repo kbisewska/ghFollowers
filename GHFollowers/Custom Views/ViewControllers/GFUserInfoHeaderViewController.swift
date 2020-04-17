@@ -31,7 +31,7 @@ class GFUserInfoHeaderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addSubview()
+        view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationImageView, locationLabel, bioLabel)
         layoutUI()
         configureUIElements()
     }
@@ -56,15 +56,6 @@ class GFUserInfoHeaderViewController: UIViewController {
                 self.avatarImageView.image = image
             }
         }
-    }
-    
-    func addSubview() {
-        view.addSubview(avatarImageView)
-        view.addSubview(usernameLabel)
-        view.addSubview(nameLabel)
-        view.addSubview(locationImageView)
-        view.addSubview(locationLabel)
-        view.addSubview(bioLabel)
     }
     
     func layoutUI() {
