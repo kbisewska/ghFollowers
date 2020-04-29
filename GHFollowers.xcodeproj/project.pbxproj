@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		568B3DA1338B121E30BF78D5 /* Pods_GHFollowersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA5EA04C67437B7F529C6135 /* Pods_GHFollowersTests.framework */; };
 		8FB373EC243F1D3800205C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373EB243F1D3800205C7A /* AppDelegate.swift */; };
 		8FB373EE243F1D3800205C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373ED243F1D3800205C7A /* SceneDelegate.swift */; };
 		8FB373F5243F1D3A00205C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB373F4243F1D3A00205C7A /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		413A75A0ED8B4D87835EED53 /* Pods-GHFollowersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHFollowersTests.release.xcconfig"; path = "Target Support Files/Pods-GHFollowersTests/Pods-GHFollowersTests.release.xcconfig"; sourceTree = "<group>"; };
 		8FB373E8243F1D3800205C7A /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB373EB243F1D3800205C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB373ED243F1D3800205C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,8 @@
 		8FB374602448A75A00205C7A /* GFDataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingViewController.swift; sourceTree = "<group>"; };
 		8FB37462244999F300205C7A /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		8FB374642449B26500205C7A /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		F2D16763F0EFA536C8875F1B /* Pods-GHFollowersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHFollowersTests.debug.xcconfig"; path = "Target Support Files/Pods-GHFollowersTests/Pods-GHFollowersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA5EA04C67437B7F529C6135 /* Pods_GHFollowersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GHFollowersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,18 +120,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				568B3DA1338B121E30BF78D5 /* Pods_GHFollowersTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E76BD19EC0903445BFFCE69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA5EA04C67437B7F529C6135 /* Pods_GHFollowersTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FB373DF243F1D3800205C7A = {
 			isa = PBXGroup;
 			children = (
 				8FB373EA243F1D3800205C7A /* GHFollowers */,
 				8FB374162440967200205C7A /* GHFollowersTests */,
 				8FB373E9243F1D3800205C7A /* Products */,
+				E8346690C02C2832ABE3DAF8 /* Pods */,
+				5E76BD19EC0903445BFFCE69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -323,6 +338,15 @@
 			path = TabBarControllers;
 			sourceTree = "<group>";
 		};
+		E8346690C02C2832ABE3DAF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2D16763F0EFA536C8875F1B /* Pods-GHFollowersTests.debug.xcconfig */,
+				413A75A0ED8B4D87835EED53 /* Pods-GHFollowersTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,9 +371,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FB3741C2440967300205C7A /* Build configuration list for PBXNativeTarget "GHFollowersTests" */;
 			buildPhases = (
+				B4577C7195DD7F2F618466EB /* [CP] Check Pods Manifest.lock */,
 				8FB374112440967200205C7A /* Sources */,
 				8FB374122440967200205C7A /* Frameworks */,
 				8FB374132440967200205C7A /* Resources */,
+				38A0DC91F7C4C8729A1958EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -357,8 +383,6 @@
 				8FB3741B2440967300205C7A /* PBXTargetDependency */,
 			);
 			name = GHFollowersTests;
-			packageProductDependencies = (
-			);
 			productName = GHFollowersTests;
 			productReference = 8FB374152440967200205C7A /* GHFollowersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -391,8 +415,6 @@
 				Base,
 			);
 			mainGroup = 8FB373DF243F1D3800205C7A;
-			packageReferences = (
-			);
 			productRefGroup = 8FB373E9243F1D3800205C7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -421,6 +443,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38A0DC91F7C4C8729A1958EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GHFollowersTests/Pods-GHFollowersTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GHFollowersTests/Pods-GHFollowersTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GHFollowersTests/Pods-GHFollowersTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4577C7195DD7F2F618466EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GHFollowersTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8FB373E4243F1D3800205C7A /* Sources */ = {
@@ -621,6 +685,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kbisewska.GHFollowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -639,6 +704,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kbisewska.GHFollowers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -648,15 +714,29 @@
 		};
 		8FB3741D2440967300205C7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D16763F0EFA536C8875F1B /* Pods-GHFollowersTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBJ7C58BY6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapshotTesting\"",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = GHFollowersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"XCTest\"",
+					"-framework",
+					"\"SnapshotTesting\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kbisewska.GHFollowersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -668,15 +748,29 @@
 		};
 		8FB3741E2440967300205C7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 413A75A0ED8B4D87835EED53 /* Pods-GHFollowersTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBJ7C58BY6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PLATFORM_DIR)/Developer/Library/Frameworks\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapshotTesting\"",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = GHFollowersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"XCTest\"",
+					"-framework",
+					"\"SnapshotTesting\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kbisewska.GHFollowersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
