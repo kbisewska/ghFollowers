@@ -24,9 +24,4 @@ class SearchViewControllerSnapshotTests: XCTestCase {
         sut = nil
         super.tearDown()
     }
-
-    func testSearchViewControllerSnapshot() {
-        assertSnapshot(matching: sut, as: .image(on: .iPhoneXr))
-    }
-
 }
