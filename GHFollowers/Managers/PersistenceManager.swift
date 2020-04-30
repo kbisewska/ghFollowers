@@ -8,19 +8,25 @@
 
 import Foundation
 
+protocol PersistanceManageable {
+    
+    func updateWith(favorite: Follower, actionType: PersistenceActionType, completed: @escaping (ErrorMessage?) -> Void)
+    func retrieveFavorites(completed: @escaping (Result<[Follower], ErrorMessage>) -> Void)
+}
+
 enum PersistenceActionType {
     case add, remove
 }
 
-enum PersistenceManager {
+struct PersistenceManager: PersistanceManageable {
     
-    static private let defaults = UserDefaults.standard
+    private let defaults = UserDefaults.standard
     
     enum Keys {
         static let favorites = "favorites"
     }
     
-    static func updateWith(favorite: Follower, actionType: PersistenceActionType, completed: @escaping (ErrorMessage?) -> Void) {
+    func updateWith(favorite: Follower, actionType: PersistenceActionType, completed: @escaping (ErrorMessage?) -> Void) {
         retrieveFavorites { result in
             switch result {
             case .success(var favorites):
@@ -38,7 +44,7 @@ enum PersistenceManager {
                     favorites.removeAll(where: { $0.login == favorite.login })
                 }
                 
-                completed(save(favorites: favorites))
+                completed(self.save(favorites: favorites))
             
             case .failure(let error):
                 completed(error)
@@ -46,7 +52,7 @@ enum PersistenceManager {
         }
     }
     
-    static func retrieveFavorites(completed: @escaping (Result<[Follower], ErrorMessage>) -> Void) {
+    func retrieveFavorites(completed: @escaping (Result<[Follower], ErrorMessage>) -> Void) {
         guard let favoritesData = defaults.object(forKey: Keys.favorites) as? Data else {
             completed(.success([]))
             return
@@ -61,7 +67,7 @@ enum PersistenceManager {
         }
     }
     
-    static func save(favorites: [Follower]) -> ErrorMessage? {
+    func save(favorites: [Follower]) -> ErrorMessage? {
         do {
             let encoder = JSONEncoder()
             let encodedFavorites = try encoder.encode(favorites)

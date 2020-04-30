@@ -13,6 +13,7 @@ class FavoritesListViewController: GFDataLoadingViewController {
     let tableView = UITableView()
     var favorites: [Follower] = []
     let noFavoritesMessage = "No Favorites?\nAdd one on the follower screen."
+    var persistanceManager: PersistanceManageable = PersistenceManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,7 @@ class FavoritesListViewController: GFDataLoadingViewController {
     }
     
     func getFavorites() {
-        PersistenceManager.retrieveFavorites { [weak self] result in
+        persistanceManager.retrieveFavorites { [weak self] result in
             guard let self = self else { return }
             
             switch result {
@@ -97,7 +98,7 @@ extension FavoritesListViewController: UITableViewDataSource, UITableViewDelegat
         
         let favorite = favorites[indexPath.row]
         
-        PersistenceManager.updateWith(favorite: favorite, actionType: .remove) { [weak self] error in
+        persistanceManager.updateWith(favorite: favorite, actionType: .remove) { [weak self] error in
             guard let self = self else { return }
             guard let error = error else {
                 self.favorites.remove(at: indexPath.row)

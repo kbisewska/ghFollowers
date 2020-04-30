@@ -24,6 +24,8 @@ class FollowerListViewController: GFDataLoadingViewController {
     
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
+    var persistanceManager: PersistanceManageable = PersistenceManager()
+    var networkManager: NetworkManageable = NetworkManager()
     
     init(username: String) {
         super.init(nibName: nil, bundle: nil)
@@ -79,7 +81,7 @@ class FollowerListViewController: GFDataLoadingViewController {
         showLoadingView()
         isLoadingMoreFollowers = true
         
-        NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
+        networkManager.getFollowers(for: username, page: page) { [weak self] result in
             guard let self = self else { return }
             
             self.dismissLoadingView()
@@ -135,7 +137,7 @@ class FollowerListViewController: GFDataLoadingViewController {
     @objc func addButtonTapped() {
         showLoadingView()
         
-        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
+        networkManager.getUserInfo(for: username) { [weak self] result in
             guard let self = self else { return }
             self.dismissLoadingView()
             
@@ -152,7 +154,7 @@ class FollowerListViewController: GFDataLoadingViewController {
     func addUserToFavorites(user: User) {
         let favorite = Follower(login: user.login, avatarUrl: user.avatarUrl)
         
-        PersistenceManager.updateWith(favorite: favorite, actionType: .add) { [weak self] error in
+        persistanceManager.updateWith(favorite: favorite, actionType: .add) { [weak self] error in
             guard let self = self else { return }
             guard let error = error else {
                 self.presentGFAlertOnMainThread(title: "Success!", message: "You have successfully favorited this user.", buttonTitle: "Hooray!")

@@ -28,5 +28,4 @@ class SearchViewControllerSnapshotTests: XCTestCase {
     func testSearchViewControllerSnapshot() {
         assertSnapshot(matching: sut, as: .image(on: .iPhoneXr))
     }
-
 }

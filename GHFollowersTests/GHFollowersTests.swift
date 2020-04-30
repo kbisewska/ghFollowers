@@ -8,26 +8,27 @@
 
 import XCTest
 
+@testable import GHFollowers
+
 class GHFollowersTests: XCTestCase {
+    
+    var sut: UITableView!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        sut = UITableView()
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        super.tearDown()
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testTableFooterView() {
+        // act
+        sut.removeExcessCells()
+        
+        // assert
+        XCTAssertNotNil(sut.tableFooterView)
+        XCTAssertEqual(sut.tableFooterView!.subviews.count, 0)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
