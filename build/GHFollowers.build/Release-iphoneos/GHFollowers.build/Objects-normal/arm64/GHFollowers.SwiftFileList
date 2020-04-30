@@ -1,0 +1,35 @@
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Extensions/UIView+Ext.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Model/User.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/ViewControllers/GFAlertViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/TextFields/GFTextField.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Screens/SearchViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Extensions/UIViewController+Ext.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Utilities/UIHelper.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/ViewControllers/ItemInfoViewControllers/GFFollowerItemViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/ViewControllers/ItemInfoViewControllers/GFRepoItemViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Utilities/Constants.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/ImageViews/GFAvatarImageView.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/Buttons/GFButton.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/ViewControllers/GFUserInfoHeaderViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/Views/GFItemInfoView.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/Cells/FavoriteCell.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Screens/FollowerListViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/TabBarControllers/GFTabBarController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/Cells/FollowerCell.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Utilities/ErrorMessage.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/Labels/GFBodyLabel.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Model/Follower.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/Views/GFAlertContainerView.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/Labels/GFTitleLabel.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Extensions/Date+Ext.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/ViewControllers/GFDataLoadingViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Managers/PersistenceManager.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/Labels/GFSecondaryTitleLabel.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/Views/GFEmptyStateView.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Managers/NetworkManager.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Support/AppDelegate.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Custom\ Views/ViewControllers/ItemInfoViewControllers/GFItemInfoViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Screens/UserInfoViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Extensions/UITableView+Ext.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Screens/FavoritesListViewController.swift
+/Users/kora/Desktop/Projects/GHFollowers/GHFollowers/Support/SceneDelegate.swift
