@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F4333ED245AD75900714B95 /* SnapshotTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4333E8245AD5E700714B95 /* SnapshotTesting.framework */; };
+		8F4333F0245AD85400714B95 /* SnapshotTesting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F4333EF245AD85400714B95 /* SnapshotTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8FB373EC243F1D3800205C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373EB243F1D3800205C7A /* AppDelegate.swift */; };
 		8FB373EE243F1D3800205C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373ED243F1D3800205C7A /* SceneDelegate.swift */; };
 		8FB373F5243F1D3A00205C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB373F4243F1D3A00205C7A /* Assets.xcassets */; };
@@ -58,7 +60,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8F4333EE245AD82400714B95 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8F4333F0245AD85400714B95 /* SnapshotTesting.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8F4333E8245AD5E700714B95 /* SnapshotTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapshotTesting.framework; path = Carthage/Build/iOS/SnapshotTesting.framework; sourceTree = "<group>"; };
+		8F4333EF245AD85400714B95 /* SnapshotTesting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapshotTesting.framework; path = Carthage/Build/iOS/SnapshotTesting.framework; sourceTree = "<group>"; };
 		8FB373E8243F1D3800205C7A /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB373EB243F1D3800205C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB373ED243F1D3800205C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,18 +133,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4333ED245AD75900714B95 /* SnapshotTesting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F4333E7245AD5E700714B95 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F4333E8245AD5E700714B95 /* SnapshotTesting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FB373DF243F1D3800205C7A = {
 			isa = PBXGroup;
 			children = (
+				8F4333EF245AD85400714B95 /* SnapshotTesting.framework */,
 				8FB373EA243F1D3800205C7A /* GHFollowers */,
 				8FB374162440967200205C7A /* GHFollowersTests */,
 				8FB373E9243F1D3800205C7A /* Products */,
+				8F4333E7245AD5E700714B95 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -350,6 +378,7 @@
 				8FB374112440967200205C7A /* Sources */,
 				8FB374122440967200205C7A /* Frameworks */,
 				8FB374132440967200205C7A /* Resources */,
+				8F4333EE245AD82400714B95 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -616,6 +645,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBJ7C58BY6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GHFollowers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -634,6 +667,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBJ7C58BY6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GHFollowers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -652,6 +689,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBJ7C58BY6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GHFollowersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -672,6 +713,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBJ7C58BY6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GHFollowersTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
