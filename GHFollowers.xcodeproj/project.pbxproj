@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F4333ED245AD75900714B95 /* SnapshotTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F4333E8245AD5E700714B95 /* SnapshotTesting.framework */; };
-		8F4333F0245AD85400714B95 /* SnapshotTesting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F4333EF245AD85400714B95 /* SnapshotTesting.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8F4333F0245AD85400714B95 /* SnapshotTesting.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8F4333EF245AD85400714B95 /* SnapshotTesting.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8FB373EC243F1D3800205C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373EB243F1D3800205C7A /* AppDelegate.swift */; };
 		8FB373EE243F1D3800205C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373ED243F1D3800205C7A /* SceneDelegate.swift */; };
 		8FB373F5243F1D3A00205C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB373F4243F1D3A00205C7A /* Assets.xcassets */; };
