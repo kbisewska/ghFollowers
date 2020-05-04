@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8F4333F2245B05D500714B95 /* FavoritesListViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4333F1245B05D500714B95 /* FavoritesListViewControllerSnapshotTests.swift */; };
 		8F4333F8245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4333F7245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift */; };
+		8F4333FA24600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4333F924600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift */; };
 		8FB373EC243F1D3800205C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373EB243F1D3800205C7A /* AppDelegate.swift */; };
 		8FB373EE243F1D3800205C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373ED243F1D3800205C7A /* SceneDelegate.swift */; };
 		8FB373F5243F1D3A00205C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB373F4243F1D3A00205C7A /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 /* Begin PBXFileReference section */
 		8F4333F1245B05D500714B95 /* FavoritesListViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		8F4333F7245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
+		8F4333F924600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		8FB373E8243F1D3800205C7A /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB373EB243F1D3800205C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB373ED243F1D3800205C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				8FB374192440967200205C7A /* Info.plist */,
 				8FB374172440967200205C7A /* GHFollowersTests.swift */,
 				8F4333F1245B05D500714B95 /* FavoritesListViewControllerSnapshotTests.swift */,
+				8F4333F924600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift */,
 				8FB374222440977900205C7A /* SearchViewControllerSnapshotTests.swift */,
 				8F4333F7245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift */,
 			);
@@ -483,6 +486,7 @@
 				8F4333F8245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift in Sources */,
 				8FB374182440967200205C7A /* GHFollowersTests.swift in Sources */,
 				8F4333F2245B05D500714B95 /* FavoritesListViewControllerSnapshotTests.swift in Sources */,
+				8F4333FA24600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

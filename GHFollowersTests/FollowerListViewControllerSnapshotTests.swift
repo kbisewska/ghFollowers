@@ -1,8 +1,8 @@
 //
-//  UserInfoViewControllerSnapshotTests.swift
+//  FollowerListViewControllerSnapshotTests.swift
 //  GHFollowersTests
 //
-//  Created by Kora on 30/04/2020.
+//  Created by Kora on 04/05/2020.
 //  Copyright © 2020 kbisewska. All rights reserved.
 //
 
@@ -16,25 +16,23 @@ class NetworkManagerMock: NetworkManageable {
     var cache = NSCache<NSString, UIImage>()
     
     func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], ErrorMessage>) -> Void) {
+        completed(.success([]))
     }
     
     func getUserInfo(for username: String, completed: @escaping (Result<User, ErrorMessage>) -> Void) {
-        completed(.success(
-            User(login: "kbisewska", avatarUrl: "", name: "Kornelia", location: "Poland", bio: nil, publicRepos: 99, publicGists: 99, htmlUrl: "/kbisewska", following: 99, followers: 99, createdAt: .init(timeIntervalSince1970: 0))
-        ))
     }
     
     func downloadImage(from urlString: String, completed: @escaping (UIImage?) -> Void) {
     }
 }
 
-class UserInfoViewControllerSnapshotTests: XCTestCase {
+class FollowerListViewControllerSnapshotTests: XCTestCase {
     
-    var sut: UserInfoViewController!
+    var sut: FollowerListViewController!
 
     override func setUp() {
         super.setUp()
-        sut = UserInfoViewController()
+        sut = FollowerListViewController(username: "kbisewska")
     }
 
     override func tearDown() {
