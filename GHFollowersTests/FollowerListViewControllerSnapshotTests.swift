@@ -11,28 +11,13 @@ import SnapshotTesting
 
 @testable import GHFollowers
 
-class NetworkManagerMock: NetworkManageable {
-    
-    var cache = NSCache<NSString, UIImage>()
-    
-    func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], ErrorMessage>) -> Void) {
-        completed(.success([]))
-    }
-    
-    func getUserInfo(for username: String, completed: @escaping (Result<User, ErrorMessage>) -> Void) {
-    }
-    
-    func downloadImage(from urlString: String, completed: @escaping (UIImage?) -> Void) {
-    }
-}
-
 class FollowerListViewControllerSnapshotTests: XCTestCase {
     
     var sut: FollowerListViewController!
 
     override func setUp() {
         super.setUp()
-        sut = FollowerListViewController(username: "kbisewska")
+        sut = FollowerListViewController(username: "test")
     }
 
     override func tearDown() {
@@ -40,8 +25,10 @@ class FollowerListViewControllerSnapshotTests: XCTestCase {
         super.tearDown()
     }
 
-    func userInfoViewControllerSnapshotTests() {
-        sut.networkManager = NetworkManagerMock()
+    func testEmptyFollowerListViewController() {
+        sut.persistanceManager = PersistanceManagerMock()
+        let message = "This user doesn't have any followers. Go follow them."
+        sut.showEmptyStateView(with: message, in: sut.view)
         assertSnapshot(matching: sut, as: .image(on: .iPhoneXr))
     }
 }
