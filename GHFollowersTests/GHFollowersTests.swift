@@ -12,11 +12,8 @@ import XCTest
 
 class GHFollowersTests: XCTestCase {
     
-    var sut: UITableView!
-
     override func setUp() {
         super.setUp()
-        sut = UITableView()
     }
 
     override func tearDown() {
@@ -24,11 +21,28 @@ class GHFollowersTests: XCTestCase {
     }
     
     func testTableFooterView() {
-        // act
+        let sut = UITableView()
+        
         sut.removeExcessCells()
         
-        // assert
         XCTAssertNotNil(sut.tableFooterView)
         XCTAssertEqual(sut.tableFooterView!.subviews.count, 0)
+    }
+    
+    func testDateConverter() {
+        let date = Date.init(timeIntervalSince1970: 0)
+        
+        XCTAssertEqual(date.convertToMonthYearFormat(), "Jan 1970")
+    }
+    
+    func testAddingSubviews() {
+        let view = UIView()
+        let subview1 = UIView()
+        let subview2 = UIView()
+        let subview3 = UIView()
+        
+        view.addSubviews(subview1, subview2, subview3)
+        
+        XCTAssertEqual(view.subviews, [subview1, subview2, subview3])
     }
 }
