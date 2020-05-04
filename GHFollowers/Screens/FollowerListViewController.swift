@@ -25,7 +25,6 @@ class FollowerListViewController: GFDataLoadingViewController {
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
     var persistanceManager: PersistanceManageable = PersistenceManager()
-    var networkManager: NetworkManageable = NetworkManager()
     
     init(username: String) {
         super.init(nibName: nil, bundle: nil)
@@ -81,7 +80,7 @@ class FollowerListViewController: GFDataLoadingViewController {
         showLoadingView()
         isLoadingMoreFollowers = true
         
-        networkManager.getFollowers(for: username, page: page) { [weak self] result in
+        NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
             guard let self = self else { return }
             
             self.dismissLoadingView()
@@ -137,7 +136,7 @@ class FollowerListViewController: GFDataLoadingViewController {
     @objc func addButtonTapped() {
         showLoadingView()
         
-        networkManager.getUserInfo(for: username) { [weak self] result in
+        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
             guard let self = self else { return }
             self.dismissLoadingView()
             

@@ -10,9 +10,7 @@ import UIKit
 
 class GFAvatarImageView: UIImageView {
     
-    var networkManager: NetworkManageable = NetworkManager()
-    
-    lazy var cache = networkManager.cache
+    lazy var cache = NetworkManager.shared.cache
     let placeholderImage = Images.placeholder
 
     override init(frame: CGRect) {
@@ -33,7 +31,7 @@ class GFAvatarImageView: UIImageView {
     }
     
     func downloadImage(fromURL url: String) {
-        networkManager.downloadImage(from: url) { [weak self] image in
+        NetworkManager.shared.downloadImage(from: url) { [weak self] image in
             guard let self = self else { return }
             
             DispatchQueue.main.async {

@@ -25,7 +25,6 @@ class UserInfoViewController: GFDataLoadingViewController {
     
     var username: String!
     weak var delegate: UserInfoViewControllerDelegate!
-    var networkManager: NetworkManageable = NetworkManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +56,7 @@ class UserInfoViewController: GFDataLoadingViewController {
     }
     
     func getUserInfo() {
-        networkManager.getUserInfo(for: username) { [weak self] result in
+        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
             guard let self = self else { return }
             
             switch result {

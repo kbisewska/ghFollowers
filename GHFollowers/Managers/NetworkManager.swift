@@ -8,21 +8,13 @@
 
 import UIKit
 
-protocol NetworkManageable {
+class NetworkManager {
     
-    var cache: NSCache<NSString, UIImage> { get }
-    
-    func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], ErrorMessage>) -> Void)
-    
-    func getUserInfo(for username: String, completed: @escaping (Result<User, ErrorMessage>) -> Void)
-    
-    func downloadImage(from urlString: String, completed: @escaping (UIImage?) -> Void)
-}
-
-class NetworkManager: NetworkManageable {
-    
+    static let shared = NetworkManager()
     private let baseURL = "https://api.github.com/users/"
     let cache = NSCache<NSString, UIImage>()
+    
+    private init() {}
     
     func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], ErrorMessage>) -> Void) {
         let endpoint = baseURL + username + "/followers?per_page=100&page=\(page)"
