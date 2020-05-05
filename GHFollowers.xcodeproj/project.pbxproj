@@ -11,6 +11,8 @@
 		8F4333F8245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4333F7245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift */; };
 		8F4333FA24600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4333F924600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift */; };
 		8F43340024600EC200714B95 /* PersistanceManagerMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4333FF24600EC200714B95 /* PersistanceManagerMocks.swift */; };
+		8F4334052460439E00714B95 /* OHHTTPStubsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8F4334042460439E00714B95 /* OHHTTPStubsSwift */; };
+		8F43340724604B3500714B95 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F43340624604B3500714B95 /* NetworkManagerTests.swift */; };
 		8FB373EC243F1D3800205C7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373EB243F1D3800205C7A /* AppDelegate.swift */; };
 		8FB373EE243F1D3800205C7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB373ED243F1D3800205C7A /* SceneDelegate.swift */; };
 		8FB373F5243F1D3A00205C7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB373F4243F1D3A00205C7A /* Assets.xcassets */; };
@@ -68,6 +70,7 @@
 		8F4333F7245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		8F4333F924600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewControllerSnapshotTests.swift; sourceTree = "<group>"; };
 		8F4333FF24600EC200714B95 /* PersistanceManagerMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManagerMocks.swift; sourceTree = "<group>"; };
+		8F43340624604B3500714B95 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		8FB373E8243F1D3800205C7A /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB373EB243F1D3800205C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FB373ED243F1D3800205C7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4334052460439E00714B95 /* OHHTTPStubsSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +187,7 @@
 				8F4333F924600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift */,
 				8FB374222440977900205C7A /* SearchViewControllerSnapshotTests.swift */,
 				8F4333F7245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift */,
+				8F43340624604B3500714B95 /* NetworkManagerTests.swift */,
 			);
 			path = GHFollowersTests;
 			sourceTree = "<group>";
@@ -361,6 +366,9 @@
 			dependencies = (
 			);
 			name = GHFollowers;
+			packageProductDependencies = (
+				8F4334042460439E00714B95 /* OHHTTPStubsSwift */,
+			);
 			productName = GHFollowers;
 			productReference = 8FB373E8243F1D3800205C7A /* GHFollowers.app */;
 			productType = "com.apple.product-type.application";
@@ -416,6 +424,7 @@
 			mainGroup = 8FB373DF243F1D3800205C7A;
 			packageReferences = (
 				8FB3741F2440971000205C7A /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				8F4334032460439E00714B95 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */,
 			);
 			productRefGroup = 8FB373E9243F1D3800205C7A /* Products */;
 			projectDirPath = "";
@@ -497,6 +506,7 @@
 				8F4333F8245B123400714B95 /* UserInfoViewControllerSnapshotTests.swift in Sources */,
 				8F43340024600EC200714B95 /* PersistanceManagerMocks.swift in Sources */,
 				8FB374182440967200205C7A /* GHFollowersTests.swift in Sources */,
+				8F43340724604B3500714B95 /* NetworkManagerTests.swift in Sources */,
 				8F4333F2245B05D500714B95 /* FavoritesListViewControllerSnapshotTests.swift in Sources */,
 				8F4333FA24600CBC00714B95 /* FollowerListViewControllerSnapshotTests.swift in Sources */,
 			);
@@ -747,6 +757,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8F4334032460439E00714B95 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/OHHTTPStubs";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		8FB3741F2440971000205C7A /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
@@ -758,6 +776,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8F4334042460439E00714B95 /* OHHTTPStubsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F4334032460439E00714B95 /* XCRemoteSwiftPackageReference "OHHTTPStubs" */;
+			productName = OHHTTPStubsSwift;
+		};
 		8FB374202440971000205C7A /* SnapshotTesting */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8FB3741F2440971000205C7A /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
